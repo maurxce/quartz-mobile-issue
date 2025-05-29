@@ -1,0 +1,13 @@
+services:
+  quartz:
+    build: .
+    volumes:
+      - ./content:/usr/src/app/content
+    networks:
+      - proxy
+
+
+networks:
+  proxy:
+    name: proxy
+    external: true
