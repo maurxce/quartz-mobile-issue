@@ -2,10 +2,10 @@ services:
   quartz:
     build: .
     volumes:
+      - ./config.ts:/usr/src/app/quartz.config.ts
       - ./content:/usr/src/app/content
     networks:
       - proxy
-
 
 networks:
   proxy:
