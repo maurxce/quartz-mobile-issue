@@ -3,6 +3,7 @@ services:
     build: .
     volumes:
       - ./config.ts:/usr/src/app/quartz.config.ts
+      - ./explorer.scss:/usr/src/app/components/styles/explorer.scss
       - ./content:/usr/src/app/content
     networks:
       - proxy
